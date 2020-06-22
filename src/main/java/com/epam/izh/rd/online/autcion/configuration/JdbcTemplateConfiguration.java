@@ -25,7 +25,6 @@ public class JdbcTemplateConfiguration {
     String password;
 
     @Bean
-    @Autowired
     public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
